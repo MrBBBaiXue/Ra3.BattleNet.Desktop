@@ -11,21 +11,22 @@
         d:DesignWidth="1152" d:DesignHeight="648"
         Width="1152" Height="648"
         TransparencyLevelHint="Mica"
-        Background="#AF000000"
-        >
+        Background="#AF000000">
     <Design.DataContext>
         <vm:MainWindowViewModel />
     </Design.DataContext>
     <Grid>
-        <Grid Margin="200,70,0,0">
-            <Border Background="#FF1F2126"
-                    BorderThickness="1,0,0,0"
-                    BorderBrush="#FF000000"
-                    />
-            <Image Source="../Assets/RA3.Splash.png"/>
-        </Grid>
-        <StackPanel Orientation="Horizontal" 
-                    Height="60" 
+        <Border Background="#FF1F2126"
+                BorderThickness="1,0,0,0"
+                BorderBrush="#FF000000"
+                Margin="200,70,0,0"
+                CornerRadius="4,0,0,0"
+                >
+            <Image Source="../Assets/RA3.Splash.png"
+                   Stretch="Fill" />
+        </Border>
+        <StackPanel Orientation="Horizontal"
+                    Height="60"
                     Margin="20,20,0,0"
                     VerticalAlignment="Top">
             <!-- <Button Content="&#xE700;" 
