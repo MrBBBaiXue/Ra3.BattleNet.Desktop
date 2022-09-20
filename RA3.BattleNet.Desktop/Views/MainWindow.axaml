@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:RA3.BattleNet.Desktop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="RA3.BattleNet.Desktop.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="RA3.BattleNet.Desktop"
+        ExtendClientAreaToDecorationsHint="True"
+        d:DesignWidth="1152" d:DesignHeight="648"
+        Width="1152" Height="648"
+        TransparencyLevelHint="Blur"
+        Background="#AF000000"
+        >
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+    <Grid>
+        <Grid Margin="200,0,0,0">
+            <Border Background="#FF1F2126"
+                    BorderThickness="1,0,0,0"
+                    BorderBrush="#FF000000"
+                    />
+            <Image Source="../Assets/RA3.Splash.png"/>
+        </Grid>
+        <StackPanel Orientation="Horizontal" 
+                    Height="60" 
+                    Margin="20,20,0,0"
+                    VerticalAlignment="Top">
+            <!-- <Button Content="&#xE700;" 
+                   FontFamily="/Assets/SegoeIcons.ttf#"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   FontSize="16"
+                   /> -->
+            <!-- <Image Source="../Assets/RA3.BattleNet.Web.Black.png"
+                   Height="40" Width="40"
+                   Margin="20,0,0,0"/> -->
+            <!-- <TextBlock Text="{Binding Greeting}"
+                       VerticalAlignment="Center"
+                       Margin="20,0,0,0" 
+                       FontSize="18"
+                       /> -->
+        </StackPanel>
+
+    </Grid>
+</Window>
