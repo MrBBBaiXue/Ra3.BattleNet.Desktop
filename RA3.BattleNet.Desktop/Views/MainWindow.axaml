@@ -10,14 +10,14 @@
         ExtendClientAreaToDecorationsHint="True"
         d:DesignWidth="1152" d:DesignHeight="648"
         Width="1152" Height="648"
-        TransparencyLevelHint="Blur"
+        TransparencyLevelHint="Mica"
         Background="#AF000000"
         >
     <Design.DataContext>
         <vm:MainWindowViewModel />
     </Design.DataContext>
     <Grid>
-        <Grid Margin="200,0,0,0">
+        <Grid Margin="200,70,0,0">
             <Border Background="#FF1F2126"
                     BorderThickness="1,0,0,0"
                     BorderBrush="#FF000000"
