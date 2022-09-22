@@ -32,7 +32,7 @@
                         Padding="40,0,0,0"
                         VerticalContentAlignment="Center"
                         Margin="10,0,10,0" />
-                <ui:Button Height="36"
+                <Button Height="36"
                            CornerRadius="4"
                            HorizontalAlignment="Stretch"
                            HorizontalContentAlignment="Left"
@@ -55,13 +55,6 @@
                            VerticalAlignment="Center"
                            Margin="20,0,20,0" />
                 </StackPanel>
-                <ui:Button Height="36"
-                           CornerRadius="4"
-                           HorizontalAlignment="Right"
-                           Width="160"
-                           Content="启动游戏"
-                           Margin="0,0,5,0"
-                           VerticalContentAlignment="Center" />
             </Grid>
             <Border
                 Margin="0,40,0,0"

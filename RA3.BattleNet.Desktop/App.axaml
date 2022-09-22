@@ -8,6 +8,5 @@
     </Application.DataTemplates>
     <Application.Styles>
         <FluentTheme Mode="Dark"/>
-        <sty:FluentAvaloniaTheme />
     </Application.Styles>
 </Application>
