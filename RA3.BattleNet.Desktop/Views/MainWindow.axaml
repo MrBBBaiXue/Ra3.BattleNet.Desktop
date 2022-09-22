@@ -22,8 +22,7 @@
         <Grid x:Name="TabLeftMenu"
               Width="220"
               HorizontalAlignment="Left">
-            <StackPanel Orientation="Vertical">
-                <Button Height="36"
+			<Button Height="36"
                         CornerRadius="4"
                         HorizontalAlignment="Left"
                         HorizontalContentAlignment="Left"
@@ -31,7 +30,10 @@
                         Width="200"
                         Padding="40,0,0,0"
                         VerticalContentAlignment="Center"
+					VerticalAlignment="Top"
                         Margin="10,0,10,0" />
+            <StackPanel Orientation="Vertical" Margin="0,40,0,0">
+                
                 <Button Height="36"
                            CornerRadius="4"
                            HorizontalAlignment="Stretch"
@@ -39,8 +41,34 @@
                            Content="主页"
                            Padding="40,0,0,0"
                            VerticalContentAlignment="Center"
-                           Margin="10,4,10,0" />
+                           Margin="10,0,10,0" />
+				<Button Height="36"
+		                CornerRadius="4"
+		   HorizontalAlignment="Stretch"
+		   HorizontalContentAlignment="Left"
+		   Content="模组"
+		   Padding="40,0,0,0"
+		   VerticalContentAlignment="Center"
+		   Margin="10,4,10,0" />
+				<Button Height="36"
+		CornerRadius="4"
+		   HorizontalAlignment="Stretch"
+		   HorizontalContentAlignment="Left"
+		   Content="地图"
+		   Padding="40,0,0,0"
+		   VerticalContentAlignment="Center"
+		   Margin="10,4,10,0" />
+				<Button Height="36"
+		CornerRadius="4"
+		   HorizontalAlignment="Stretch"
+		   HorizontalContentAlignment="Left"
+		   Content="录像"
+		   Padding="40,0,0,0"
+		   VerticalContentAlignment="Center"
+		   Margin="10,4,10,0" />
+				<Label Content="已固定" Margin="10,10,0,0"/>
             </StackPanel>
+			
         </Grid>
         <Grid x:Name="TabContent" Margin="220,0,0,0">
             <Grid VerticalAlignment="Top" Height="36">

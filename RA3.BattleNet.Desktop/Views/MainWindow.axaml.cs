@@ -1,5 +1,4 @@
 using Avalonia.Controls;
-using Avalonia.Input;
 
 namespace RA3.BattleNet.Desktop.Views
 {

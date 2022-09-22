@@ -1,7 +1,7 @@
-using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using RA3.BattleNet.Desktop.ViewModels;
+using System;
 
 namespace RA3.BattleNet.Desktop
 {
@@ -14,10 +14,10 @@ namespace RA3.BattleNet.Desktop
 
             if (type != null)
             {
-                return (Control) Activator.CreateInstance(type)!;
+                return (Control)Activator.CreateInstance(type)!;
             }
 
-            return new TextBlock {Text = "Not Found: " + name};
+            return new TextBlock { Text = "Not Found: " + name };
         }
 
         public bool Match(object data)
