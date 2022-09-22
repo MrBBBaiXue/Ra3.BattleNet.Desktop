@@ -3,8 +3,6 @@
         xmlns:vm="using:RA3.BattleNet.Desktop.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:ui="using:FluentAvalonia.UI.Controls"
-        xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
         mc:Ignorable="d"
         x:Class="RA3.BattleNet.Desktop.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
@@ -12,6 +10,7 @@
         ExtendClientAreaToDecorationsHint="True"
         d:DesignWidth="1152" d:DesignHeight="648"
         Width="1152" Height="648"
+        MinWidth="960" MinHeight="540"
         TransparencyLevelHint="Mica"
         Background="#AF000000">
     <Design.DataContext>
@@ -22,53 +21,85 @@
         <Grid x:Name="TabLeftMenu"
               Width="220"
               HorizontalAlignment="Left">
-			<Button Height="36"
-                        CornerRadius="4"
-                        HorizontalAlignment="Left"
-                        HorizontalContentAlignment="Left"
-                        Content="登陆账户"
-                        Width="200"
-                        Padding="40,0,0,0"
-                        VerticalContentAlignment="Center"
-					VerticalAlignment="Top"
-                        Margin="10,0,10,0" />
+            <Label Height="36"
+                    CornerRadius="4"
+                    Content="登陆账户"
+                    Width="200"
+                    Padding="40,0,0,0"
+                    VerticalContentAlignment="Center"
+                    VerticalAlignment="Top"
+                    Margin="10,0,10,0" />
             <StackPanel Orientation="Vertical" Margin="0,40,0,0">
-                
                 <Button Height="36"
-                           CornerRadius="4"
-                           HorizontalAlignment="Stretch"
-                           HorizontalContentAlignment="Left"
-                           Content="主页"
-                           Padding="40,0,0,0"
-                           VerticalContentAlignment="Center"
-                           Margin="10,0,10,0" />
-				<Button Height="36"
-		                CornerRadius="4"
-		   HorizontalAlignment="Stretch"
-		   HorizontalContentAlignment="Left"
-		   Content="模组"
-		   Padding="40,0,0,0"
-		   VerticalContentAlignment="Center"
-		   Margin="10,4,10,0" />
-				<Button Height="36"
-		CornerRadius="4"
-		   HorizontalAlignment="Stretch"
-		   HorizontalContentAlignment="Left"
-		   Content="地图"
-		   Padding="40,0,0,0"
-		   VerticalContentAlignment="Center"
-		   Margin="10,4,10,0" />
-				<Button Height="36"
-		CornerRadius="4"
-		   HorizontalAlignment="Stretch"
-		   HorizontalContentAlignment="Left"
-		   Content="录像"
-		   Padding="40,0,0,0"
-		   VerticalContentAlignment="Center"
-		   Margin="10,4,10,0" />
-				<Label Content="已固定" Margin="10,10,0,0"/>
+                        CornerRadius="4"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        Margin="10,5,10,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="&#xF59F;" 
+                               VerticalContentAlignment="Center"
+                               HorizontalContentAlignment="Center"
+                               Width="32"
+                               Height="32"
+                               FontSize="16"
+                               FontFamily="../Assets/FontAwesome6.Solid.otf#"/> 
+                        <Label Content="主页"/>
+                    </StackPanel>
+                </Button>
+                <Button Height="36"
+                        CornerRadius="4"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        Margin="10,5,10,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="&#xF11B;" 
+                               VerticalContentAlignment="Center"
+                               Width="32"
+                               Height="32"
+                               FontSize="18"
+                               FontFamily="../Assets/FontAwesome6.Solid.otf#"/> 
+                        <Label Content="模组"/>
+                    </StackPanel>
+                </Button>
+                <Button Height="36"
+                        CornerRadius="4"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        Margin="10,5,10,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="&#xF59F;" 
+                               VerticalContentAlignment="Center"
+                               Width="32"
+                               Height="32"
+                               FontSize="16"
+                               FontFamily="../Assets/FontAwesome6.Solid.otf#"/> 
+                        <Label Content="地图"/>
+                    </StackPanel>
+                </Button>
+                <Button Height="36"
+                        CornerRadius="4"
+                        HorizontalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        VerticalContentAlignment="Center"
+                        Margin="10,5,10,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="&#xF59F;" 
+                               VerticalContentAlignment="Center"
+                               Width="32"
+                               Height="32"
+                               FontSize="16"
+                               FontFamily="../Assets/FontAwesome6.Solid.otf#"/> 
+                        <Label Content="录像"/>
+                    </StackPanel>
+                </Button>
+                <Label Content="已固定" 
+                       Margin="10,10,0,0"
+                       FontSize="12"
+                       />
             </StackPanel>
-			
         </Grid>
         <Grid x:Name="TabContent" Margin="220,0,0,0">
             <Grid VerticalAlignment="Top" Height="36">
