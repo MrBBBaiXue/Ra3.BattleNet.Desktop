@@ -22,7 +22,7 @@ namespace RA3.BattleNet.Desktop.ViewModels
             if (!Directory.Exists(liveContentDirectory))
             {
                 // Clone if directory not exists.
-                Repository.Clone(repoURL, liveContentDirectory);
+                //Repository.Clone(repoURL, liveContentDirectory);
             }
         }
         
